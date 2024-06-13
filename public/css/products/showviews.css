@@ -1,0 +1,248 @@
+/* Estilos generales */
+
+.cuerpo {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+/* Estilos para el encabezado */
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.h3-style {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p2 {
+    font-size: 24px;
+    color: black;
+}
+
+#text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilos para la imagen */
+
+.image-container {
+    margin-bottom: 20px;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.imagen {
+    max-width: 100%;
+    max-height: 150%;
+}
+
+/* Estilos para el botón de cantidad */
+
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contenedores {
+    display: flex;
+    align-items: center;
+}
+
+a.estilobtn {
+    padding: 5px 10px;
+    font-size: 24px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+a.estilobtn:hover {
+    background-color: #213E60;
+    color: #fff;
+}
+
+span.estilovsta {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Estilos para el botón de agregar */
+
+button.color-button {
+    padding: 10px 20px;
+    font-size: 100%;
+    color: #ff6000;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 20px;
+}
+
+button.color-button:hover {
+    background-color: #05535d;
+    color: #ffffff;
+}
+
+/* Estilos para pantallas pequeñas */
+
+@media screen and (max-width: 767px) {
+    /* Alinear el botón agregar y el botón volver */
+    main button,
+    .profile {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .btnv {
+        display: block;
+        margin: 10px auto;
+        font-size: 10%;
+    }
+
+    /* Hacer la imagen más grande */
+    .image-container img {
+        min-width: 40%;
+        min-height: 40%;
+
+        border-radius: 20px;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+
+@media screen and (min-width: 768px) {
+    /* Alinear la sección de información del producto y la imagen */
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Establecer un ancho fijo para la sección de información del producto */
+    .section-title {
+        width: 45%;
+    }
+
+    /* Establecer un ancho fijo para la imagen */
+    .image-container {
+        width: 45%;
+
+        border-radius: 20px;
+    }
+
+    /* Hacer la imagen más grande */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+
+        border-radius: 20px;
+    }
+
+    /* Alinear el botón agregar y el botón volver */
+    main button,
+    .profile a {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+.profile {
+    display: grid;
+
+    margin: 10%;
+
+    grid-template: "section-title visual" auto "description visual" auto "nav visual" 0fr / 32% 1fr;
+    column-gap: 40px;
+}
+
+.profile hgroup {
+    grid-area: section-title;
+    margin: 5%;
+}
+
+.profile form {
+    grid-area: description;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.descripcion {
+    width: 300px;
+    word-break: break-all;
+}
+
+.profile figure {
+    grid-area: visual;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 800px;
+    /* Puedes cambiar este valor según sea necesario */
+    margin: auto;
+
+    border-radius: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    margin-left: 10%;
+
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.btnv {
+    background-color: #ffffff;
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
+
+.btnv:hover {
+    background-color: #05535d;
+    color: #ffffff;
+    border: 2px solid #213E60;
+}

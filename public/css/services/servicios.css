@@ -1,0 +1,791 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .degradado {
+    background-image: linear-gradient(to bottom, #fff1df 60%, #ffffff 100%);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .cuadro-centrado {
+    width: 80%;
+    height: 270px;
+    position: relative;
+    top: 33.3%;
+    padding-top: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 4em;
+    color: #fa773a;
+    font-weight: bold;
+
+    border-radius: 2rem;
+    box-shadow: 0px 5px 20px 1px #eadecf;
+  }
+
+  .text-center {
+    font-size: 0.4em;
+    color: black;
+    font-weight: lighter;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .no_sub {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .element {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  /*Texto ubicado a la izquierda*/
+
+  .texto-left {
+    float: left;
+    width: 65%;
+    margin-top: 6%;
+    flex-direction:column;
+    align-items: center;
+    font-size: 1.7em;
+    margin-left: 4%;
+    height: 70%;
+    text-align: justify;
+  }
+
+  #titulo-left {
+    text-align: center;
+    width: 75%;
+    margin-bottom: 6%;
+  }
+
+  .orangered {
+    color: #ff7c48;
+    text-decoration: none;
+  }
+
+  #text-left {
+    width: 80%;
+  }
+
+  /*Texto ubicado a la derecha*/
+
+  .texto-right {
+    float: right;
+    width: 45%;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7em;
+    text-align: justify;
+    margin-right:4%;
+  }
+
+  #titulo-right {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6%;
+  }
+
+  #text-right {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  /*Carrusel ubicado a la  derecha(right)*/
+
+  .carrusel-right {
+    margin-top:7%;
+    width: 45%;
+
+  }
+
+  /*Carrusel ubicado a la izquierda(left)*/
+
+  .carrusel-left {
+    margin-top: 6%;
+    float: left;
+    width: 45%;
+    margin-right:100px;
+  }
+
+
+  /*BOTON*/
+
+  .boton-container{
+    height: 100px;
+    width: 100%;
+    background:white;
+    margin-top: 4px;
+    margin-bottom:10px;
+    display:flex;
+  }
+
+
+  .boton{
+    background: linear-gradient(0deg, #59a1aa 0%, #05535d 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 170px;
+    transition: .2s;
+  }
+
+  .boton:hover{
+    box-shadow: 0px 0px 5px 1px #213E60;
+    background: linear-gradient(0deg, #89c7cf 0%, #1e7681 100%);
+  }
+
+
+  /*Separador Naranja*/
+
+  .orange-separator {
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ebd5bd 0%, #ffe6c6 15%, #ffe6c6 85%, #ebd5bd 100%);
+    margin-bottom: 6px;
+  }
+
+
+   /*Seccion informlativa*/
+
+   .informacion-temporadas{
+
+    width:100%;
+    height:auto;
+    margin-top: 5%;
+  }
+
+  #titulo-temporadas h1{
+    color: #fa773a;
+    font-weight: bold;
+    text-shadow: rgb(145, 143, 143) 0.1em 0.1em 0.3em;
+  }
+
+  .informacion{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .colores-temp{
+    height: auto;
+  }
+
+  .temp{
+    width: 100%;
+    align-items: center;
+  }
+
+  #alta{
+    width:15%;
+    height: 70%;
+    background-color:#ff80d5;
+  }
+
+  #media{
+    width:15%;
+    height: 70%;
+    background-color:#ffd966;
+    margin-left:3%;
+  }
+
+  #baja{
+    width:15%;
+    height: 70%;
+    background-color:#bdd7ee;
+  }
+
+
+  #imagen-temporadas img{
+    width:auto;
+    height: auto;
+    flex:1;
+  }
+
+
+  /*   RESPONSIVE    */
+
+  @media (min-width:1200px){
+    #services{
+      font-size: 3.7rem;
+    }
+
+    .text-center{
+      margin-top:30px;
+      font-size: 2.2rem;
+
+    }
+    .boton{
+      width:20%;
+      height:50%;
+      font-size: 2rem;
+    }
+
+    #btn-right{
+      padding-left:60%;
+    }
+    #left{
+      margin-left:15%;
+      padding-left:3% ;
+    }
+    #right{
+      width:50%;
+      padding-left:6%;
+    }
+    .texto-right{
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /*Seccion informlativa*/
+
+  #titulo-temporadas{
+    width:50%;
+    height: auto;
+    display: flex;
+    margin-left:27% ;
+  }
+
+  #titulo-temporadas h1{
+    font-size: 3.2rem;
+  }
+
+  .informacion{
+    display: flex;
+  }
+
+  .colores-temp{
+    width:23%;
+  }
+
+  .temp{
+    height:15%;
+    margin-top:2%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  #imagen-temporadas{
+    width:78%;
+    height: 20%;
+  }
+
+
+  }
+
+  @media (min-width:991px) and (max-width:1199px){
+
+
+    #services{
+      font-size: 3.7rem;
+    }
+    .text-center{
+      margin-top: 25px;
+      font-size:2rem;
+    }
+
+    .texto-right{
+      font-size: 1.3rem;
+      width:35%;
+    }
+
+    .texto-left{
+      font-size: 1.3rem;
+    }
+
+    .orangered{
+      font-size: 1.6rem;
+    }
+
+    .carrusel-left{
+      width:75%;
+    }
+
+    .carrusel-right{
+      width:70%;
+      margin-left:4%;
+    }
+
+    .boton{
+      height:50%;
+      padding-left:2%;
+      font-size: 1.4rem;
+    }
+    #left{
+      margin-left:13%;
+      padding-left:3%;
+      width: 18%;
+    }
+    #right{
+      width:18%;
+      padding-left:3%;
+      margin-left:69%;
+    }
+
+     /*Seccion informlativa*/
+
+  #titulo-temporadas{
+    width:60%;
+    height: auto;
+    display: flex;
+    margin-left:25%;
+  }
+  #titulo-temporadas h1{
+    font-size: 3rem;
+  }
+  .informacion{
+    display:flex;
+  }
+  .colores-temp{
+    width:25%;
+  }
+  .temp{
+    display: flex;
+    justify-content: space-evenly;
+    height:15%;
+    margin-top:2%;
+  }
+
+  #imagen-temporadas{
+    width:78%;
+    height: 20%;
+  }
+
+
+
+  }
+  @media (min-width:649px) and (max-width: 990px){
+
+
+    #services{
+      font-size:3.5rem;
+    }
+    .text-center{
+      margin-top:30px;
+      font-size:1.7rem;
+    }
+    .element {
+      align-items: center;
+      font-size: 0.6rem;
+      flex-direction: column;
+    }
+    .texto-left{
+      font-size: 1.5rem;
+      margin-left: 15%;
+      width:70%;
+    }
+
+    #titulo-left {
+      font-size: 1.8rem;
+    }
+
+    .carrusel-right{
+      margin-left:30%;
+      width:70%;
+    }
+
+    .carrusel-left {
+      width: 75%;
+      padding-left: 2%;
+    }
+    .texto-right {
+      margin-top:10%;
+      width: 60%;
+      font-size:1.5rem;
+      padding-left:6%;
+    }
+    #titulo-right{
+      font-size:1.8rem;
+    }
+
+    /*BOTONES*/
+
+    .boton{
+      height:60%;
+      padding-left:2%;
+      font-size: 1.4rem;
+      margin-top:3%;
+    }
+    #left{
+      margin-left: 43%;
+      padding-left:3%;
+      width: 18%;
+    }
+    #right{
+      width:18%;
+      padding-left:3%;
+      margin-left:42%;
+    }
+
+     /*Seccion informlativa*/
+
+
+  #titulo-temporadas{
+    width:75%;
+    height: auto;
+    align-items: center;
+    margin-left: 22%;
+  }
+  #titulo-temporadas h1{
+    font-size: 2.6rem;
+  }
+  .informacion{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .colores-temp{
+    width:100%;
+    justify-content: space-evenly;
+    display:flex;
+    margin-top:4%;
+  }
+  .temp{
+    height:40px;
+    justify-content: center;
+    display: flex;
+  }
+  #imagen-temporadas{
+    width:100%;
+    height:80%;
+    display:flex;
+  }
+
+
+
+
+  }
+
+
+  @media (min-width:576px) and (max-width:648px){
+    #services{
+      font-size:3.4rem;
+    }
+    .text-center{
+      margin-top:30px;
+      font-size:1.7rem;
+    }
+    .element {
+      align-items: center;
+      font-size: 0.6rem;
+      flex-direction: column;
+    }
+
+    .texto-left{
+      margin-left: 12%;
+      width:70%;
+      font-size: 1.2rem;
+    }
+
+
+    #titulo-left {
+      font-size: 1.5rem;
+      margin-left: 2%;
+    }
+
+    .carrusel-right{
+      margin-left:27%;
+      width:70%;
+    }
+
+    .carrusel-left{
+      width:70%;
+      margin-left:7%;
+    }
+    #titulo-right{
+      font-size:1.5;
+    }
+
+    .texto-right{
+      width:60%;
+      font-size:1.2rem;
+      padding-left:6%;
+      margin-top: 10%;
+    }
+
+  /*BOTONES*/
+
+  .boton{
+    height:60%;
+    padding-left:2%;
+    font-size: 1.4rem;
+    margin-top:3%;
+  }
+  #left{
+    margin-left: 39%;
+    padding-left:3%;
+    width: 18%;
+  }
+  #right{
+    width:18%;
+    padding-left:3%;
+    margin-left:39%;
+  }
+
+     /*Seccion informlativa*/
+
+
+  #titulo-temporadas{
+    width:75%;
+    height: auto;
+    align-items: center;
+    margin-left: 22%;
+  }
+  #titulo-temporadas h1{
+    font-size: 2.6rem;
+  }
+  .informacion{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .colores-temp{
+    width:100%;
+    justify-content: space-evenly;
+    display:flex;
+    margin-top:4%;
+  }
+  .temp{
+    height:40px;
+    justify-content: center;
+    display: flex;
+  }
+  #imagen-temporadas{
+    width:100%;
+    height:80%;
+    display:flex;
+  }
+
+
+
+  }
+
+
+  @media (min-width:433px) and (max-width:575px){
+
+    .text-center{
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    .cuadro-centrado{
+      height:270px;
+    }
+
+    #services{
+      font-size:2.2rem;
+    }
+
+    .element {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .texto-left{
+      font-size: 1rem;
+      width:80%;
+      margin-left: 16%;
+    }
+
+    #titulo-left {
+      margin-left:3%;
+      font-size: 1.2rem;
+    }
+
+    .carrusel-right{
+      width:80%;
+      margin-left:30%;
+    }
+
+    .carrusel-left{
+      width:85%;
+      margin-left:10%;
+    }
+    #titulo-right{
+      margin-left:3%;
+      font-size:1.2rem;
+    }
+    .texto-right{
+      font-size: 1rem;
+      width:75%;
+      margin-left:5%;
+      margin-top:14%;
+    }
+
+    /*BOTONES*/
+
+    .boton{
+      height:60%;
+      padding-left:2%;
+      font-size: 1rem;
+      margin-top:3%;
+    }
+
+    #left{
+      margin-left: 40%;
+      padding-left:3%;
+      width: 20%;
+    }
+
+    #right{
+      width:20%;
+      padding-left:3%;
+      margin-left:40%;
+    }
+
+     /*Seccion informlativa*/
+
+
+  #titulo-temporadas{
+    width:75%;
+    height: auto;
+    align-items: center;
+    margin-left: 22%;
+  }
+  #titulo-temporadas h1{
+    font-size: 2.6rem;
+  }
+  .informacion{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .colores-temp{
+    width:100%;
+    justify-content: space-evenly;
+    display:flex;
+    margin-top:4%;
+  }
+  .temp{
+    height:40px;
+    justify-content: center;
+    display: flex;
+  }
+  #imagen-temporadas{
+    width:100%;
+    height:80%;
+    display:flex;
+  }
+
+
+  }
+
+  @media (max-width:432px){
+    .text-center{
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    .cuadro-centrado{
+      height:270px;
+    }
+    #services{
+      font-size:3rem;
+    }
+    .element {
+      align-items: center;
+      flex-direction: column;
+    }
+    .texto-left{
+      font-size: 1rem;
+      width:80%;
+      margin-left: 16%;
+    }
+    #titulo-left {
+      margin-left:3%;
+      font-size: 1.2rem;
+    }
+    .carrusel-right{
+      width:80%;
+      margin-left:30%;
+    }
+
+    .carrusel-left{
+      width:85%;
+      margin-left:10%;
+    }
+    #titulo-right{
+      margin-left:3%;
+      font-size:1.2rem;
+    }
+    .texto-right{
+      font-size: 1rem;
+      width:75%;
+      margin-left:5%;
+      margin-top:14%;
+    }
+
+    /*BOTONES*/
+
+    .boton{
+      height:60%;
+      padding-left:2%;
+      font-size: 1rem;
+      margin-top:3%;
+    }
+    #left{
+      margin-left: 40%;
+      padding-left:3%;
+      width: 20%;
+    }
+    #right{
+      width:20%;
+      padding-left:3%;
+      margin-left:40%;
+    }
+       /*Seccion informlativa*/
+
+
+  #titulo-temporadas{
+    width:75%;
+    height: auto;
+    align-items: center;
+    margin-left: 22%;
+  }
+  #titulo-temporadas h1{
+    font-size: 2.6rem;
+  }
+  .informacion{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .colores-temp{
+    width:100%;
+    justify-content: space-evenly;
+    display:flex;
+    margin-top:4%;
+  }
+  .temp{
+    height:40px;
+    justify-content: center;
+    display: flex;
+  }
+  #imagen-temporadas{
+    width:100%;
+    height:80%;
+    display:flex;
+  }
+  }

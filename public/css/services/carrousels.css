@@ -1,0 +1,47 @@
+/*Carousel de cancha*/
+
+.cuerpo {
+  background-color: #fff;
+}
+
+.carousel-container {
+  position: relative;
+  width: 700px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  width: 700px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: orange;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
