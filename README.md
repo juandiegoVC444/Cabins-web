@@ -1,2 +1,3 @@
-![image](https://github.com/alexm9991/cabins-web/assets/69771593/1d2e6b82-7385-4892-8814-dad0fdcfc36d)
+proyecto sena en el cual mis compañeros y yo tomamos la idea de mejorar las ganancias de una finca ubicada en armenia, entonces por lo cual desarrollamos un e-commerce para los usuarios ingresen y hagan sus reservas, todo esto tiene su debido metodo de pago sus preios sus productos los cuales son muchos y tiene un precio dependiendo de la temporada e imagenes del lugar y descripcion de actividades que se pueden realizar en el lugar.
 
+sena project in which my colleagues and I took the idea of ​​improving the profits of a farm located in Armenia, so we developed an e-commerce for users to enter and make their reservations, all of this has its proper payment method. There are many prices for their products and their price depends on the season and images of the place and description of activities that can be done there.
